@@ -1,0 +1,24 @@
+# Local environment and generated files
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Local deployment outputs
+*.deployment.json
+*.what-if.json
+
+# Local parameter overrides
+*.local.bicepparam
+*.secrets.bicepparam
+
+# Credentials and private keys
+.env
+.env.*
+!.env.example
+*.pem
+*.pfx
+*.key
+
+# Local tooling folders
+.vscode/
