@@ -1,7 +1,5 @@
-using './main.bicep'
 
-// Non-production planning configuration only.
-// These values do not authorize or deploy Azure resources.
+using './main.bicep'
 
 param environmentName = 'dev'
 param location = 'eastus'

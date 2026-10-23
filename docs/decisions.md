@@ -137,3 +137,12 @@ Examples include:
 ## Current Status
 
 Architecture planning and discovery are in progress. Production technology choices and deployment approval remain pending validation.
+
+## Portfolio Demonstration Boundary
+
+This repository is being developed as an architecture and infrastructure-as-code demonstration using the available Argo migration requirements.
+
+- Proposed designs and assumptions are for demonstration purposes and are not client-approved production decisions.
+- Local template validation may be performed without deploying Azure resources.
+- Any billable Azure deployment requires explicit authorization, a reviewed design, and cost and security checks.
+- Production implementation remains subject to application-vendor compatibility, licensing, workload testing, and approval by the authorized stakeholders.

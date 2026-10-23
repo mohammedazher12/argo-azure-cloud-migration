@@ -234,3 +234,31 @@ Before production approval, the project should demonstrate that:
 **Deployment:** No production deployment is authorized by this document.
 
 **Next step:** Review the outstanding questions with the client, validate vendor support, and prepare a costed pilot design before creating billable Azure infrastructure.
+
+## 10. Proposed Deployment Layout
+
+This section presents a candidate deployment layout for architecture review. It is not an approved production configuration.
+
+### User Access Layer
+- Azure Virtual Desktop is the candidate replacement for TS5, TS6, and TSIH.
+- Session-host count and VM sizes will be determined through workload analysis and pilot testing.
+- Required applications, peripherals, and user sign-in flows must be validated.
+
+### Application and Database Layer
+- MDS and Pervasive SQL remain the existing application and database dependencies.
+- Azure VM hosting is a candidate approach, subject to vendor support and workload testing.
+- Database placement, operating system, storage configuration, and recovery procedures remain open decisions.
+- Ivy Hill's separate database requirement must be assessed independently.
+
+### File and Profile Storage Layer
+- Azure Files is a candidate for shared business files, subject to protocol, permissions, performance, and recovery validation.
+- FSLogix profile containers are a candidate for AVD profiles, subject to identity and storage compatibility.
+- Business files, database files, user profiles, and backups must be inventoried separately.
+
+### Shared Platform Services
+- Identity, DNS, networking, administrative access, monitoring, security, and backup services must be designed around the discovered environment.
+- Required connectivity and access rules must be documented before implementation.
+- Budget monitoring and cost estimates must be reviewed before any billable deployment.
+
+### Deployment Gate
+No production deployment should proceed until vendor compatibility, licensing, security, workload sizing, cost, backup and recovery, and migration approvals have been documented.
